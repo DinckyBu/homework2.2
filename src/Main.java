@@ -4,22 +4,22 @@ public class Main {
         // Объявляете переменные для входных данных и параметров программы:
         // начального счёта,
 
-        int x = 100;
+        int check = 100;
 
         // суммы пополнения,
 
-        int y = 1300;
+        int depositAmount = 1300;
 
         // Условным оператором проверяете, превысила ли сумма пополнения порог, и для этих двух разных
         // сценариев рассчитываете сумму бонуса и выводите на экран.
 
-        if (y > 1000) {
-            System.out.println("Итоговая сумма " + (y / 100 + x + y));
+        if (depositAmount > 1000) {
+            System.out.println("Итоговая сумма " + (depositAmount / 100 + check + depositAmount));
 
-            System.out.println("Бонус " + (y / 100));
+            System.out.println("Бонус " + (depositAmount / 100));
 
         } else {
-            System.out.println(y + x);
+            System.out.println(depositAmount + check);
         }
 
     }
